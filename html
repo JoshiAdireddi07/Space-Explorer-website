@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuLA-10n - Exploring Space</title>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.53/build/spline-viewer.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="starfield" id="starfield"></div>
+    
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="nav-container">
+            <div class="logo">SPACE EXPLORER</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="https://science.nasa.gov/missions/webb/nasas-webb-finds-new-evidence-for-planet-around-closest-solar-twin/" class="nav-link" target="_blank">Discover</a></li>
+                    <li><a href="https://science.nasa.gov/exoplanets/missions/" class="nav-link" target="_blank">Missions</a></li>
+                    <li><a href="https://science.nasa.gov/exoplanets/" class="nav-link" target="_blank">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#discover" class="cta-button">Explore Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="page-section hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Journey Beyond the Stars</h1>
+            <p class="hero-subtitle">Discover the mysteries of distant worlds and cosmic phenomena</p>
+            <p class="hero-description">
+                Embark on an extraordinary voyage through the cosmos, where cutting-edge technology meets the infinite wonders of space. 
+                From gas giants to distant galaxies, explore the universe like never before with immersive 3D experiences 
+                and real scientific data that brings the cosmos to your fingertips.
+            </p>
+            <div class="hero-buttons">
+                <a href="#discover" class="btn-primary">Start Exploring</a>
+                <a href="#missions" class="btn-secondary">View Missions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planet Discovery Section -->
+    <section id="discover" class="page-section planet-section">
+        <div class="planet-header">
+            <div class="title-section">
+                <h1>Exploring</h1>
+                <h2>Space</h2>
+            </div>
+            
+            <div class="info-text">
+                <p class="info-sentence">NuLA-10n represents a colossal gas giant, potentially ranking among the largest planetary bodies ever catalogued in our cosmic surveys.</p>
+                <p class="info-sentence">This magnificent celestial body exhibits a predominantly helium and hydrogen atmospheric composition, characteristic of massive gaseous worlds.</p>
+                <p class="info-sentence">Located approximately 847 light-years from Earth, NuLA-10n challenges our understanding of planetary formation and evolution.</p>
+            </div>
+        </div>
+
+        <div class="planet-content">
+            <h1 class="planet-title">NuLA-10n</h1>
+            
+            <div class="planet-container">
+                <spline-viewer url="https://prod.spline.design/7UjVYhh3MOmmlvXB/scene.splinecode"></spline-viewer>
+            </div>
+            
+            <button class="new-planet-btn" onclick="generateNewPlanet()">Generate New View</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="page-section footer-section">
+        <div class="footer-content">
+            <div class="footer-section-content">
+                <h3>Space Explorer</h3>
+                <p class="footer-description">
+                    Pioneering the future of space exploration through innovative technology and immersive experiences. 
+                    Join us as we unlock the secrets of the universe.
+                </p>
+                <div class="social-links">
+                    <a href="https://twitter.com/nasa" class="social-link" target="_blank">𝕏</a>
+                    <a href="https://www.facebook.com/NASA" class="social-link" target="_blank">📘</a>
+                    <a href="https://www.instagram.com/nasa" class="social-link" target="_blank">📷</a>
+                    <a href="https://www.youtube.com/nasa" class="social-link" target="_blank">▶</a>
+                </div>
+            </div>
+            
+            <div class="footer-section-content">
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="https://science.nasa.gov/missions/webb/nasas-webb-finds-new-evidence-for-planet-around-closest-solar-twin/" target="_blank">Discoveries</a></li>
+                    <li><a href="https://science.nasa.gov/exoplanets/missions/" target="_blank">Current Missions</a></li>
+                    <li><a href="https://science.nasa.gov/exoplanets/" target="_blank">Research</a></li>
+                    <li><a href="#contact">Observatory</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section-content">
+                <h3>Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="#">3D Models</a></li>
+                    <li><a href="#">Scientific Data</a></li>
+                    <li><a href="#">Educational Content</a></li>
+                    <li><a href="#">API Documentation</a></li>
+                    <li><a href="#">Developer Tools</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section-content">
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Space Explorer. All rights reserved. | Exploring the cosmos, one discovery at a time.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
